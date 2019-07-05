@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Kanit|Play" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/main.css">
+        <title>Profile</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html"><img src="../image/prop.png" alt="Homepage"></a>
+                <ul class="info">
+                    <li><a href="#">Rent/Buy</a></li>
+                    <li><a href="#">Advertise</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                    <li><a href="./login.html">Log In</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="profile-card">
+            <h3 id="userprof">User Profile</h3>
+
+            <div id="profile-image">
+                <i class="far fa-user img-icon"></i>
+                <p class="upload" title="Upload Image"><i class="fas fa-camera"></i></p>
+            </div>
+
+            <details id="userprofile" name="Personal Info" class="profileinfo">
+                <summary>Personal Info</summary>
+                <div class="content">
+                    <p>Email:<span id="email"></span></p>
+                    <p>Username:<span id="user"></span></p>
+                    <p>Date joined:<span id="date"></span></p>
+                    <p>User type:<span id="type"></span></p>
+                </div>
+            </details>
+
+            <details id="transactions" class="profileinfo">
+                <summary>Transaction History</summary>
+                <div class="content">
+                    <p>Last property posted:</p>
+                    <p>Date of last post:</p>
+                    <p>Property sold:</p>
+                    <p>Property flagged:</p>
+                </div>
+            </details>
+
+            <details id="manage" class="profileinfo">
+                <summary>Manage Property</summary>
+                <div class="content">
+                    <p>Post a new property</p>
+                    <p>Update advert</p>
+                    <p>Delete advert</p>
+                </div>
+            </details>
+            
+        </div>
+    </body>
+
+</html>

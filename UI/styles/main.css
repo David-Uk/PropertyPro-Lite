@@ -1,579 +1,586 @@
 :root {
-	--color-dark: rgb(20, 17, 17);
-	--color-light-grey: rgb(185, 178, 178);
-	--color-white: white;
-	--color-black: #000;
-	--color-dark-forms: rgb(38, 38, 38);
-	--color-green: rgb(51, 153, 102);
+    --color-dark: rgb(20, 17, 17);
+    --color-light-grey: rgb(185, 178, 178);
+    --color-white: white;
+    --color-black: #000;
+    --color-dark-forms: rgb(38, 38, 38);
+    --color-green: rgb(51, 153, 102);
 }
 
 * {
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 html,
 body {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body {
-	background: #d4d4d4;
+    background: #d4d4d4;
 }
 
 header {
-	display: sticky;
-	background-color: var(--color-dark);
-	width: 100%;
-	max-width: 100%;
-	margin-bottom: 50px;
+    display: sticky;
+    background-color: var(--color-dark);
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
 }
 
 header nav {
-	max-width: 100%;
-	background-color: var(--color-dark);
+    max-width: 100%;
+    background-color: var(--color-dark);
 }
 
 header nav a img {
-	position: absolute;
-	height: 2vw;
-	width: 5vw;
-	margin-bottom: 0px;
+    position: absolute;
+    height: 2vw;
+    width: 5vw;
+    margin-bottom: 0px;
 }
 
 header nav ul {
-	padding: 10px;
-	margin: 0;
-	text-align: center;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
 }
 
 header nav ul li {
-	font-size: 15px;
-	display: inline;
-	list-style-type: none;
-	border: none;
-	line-height: 20px;
-	vertical-align: 0px;
-	font: 700 13px Helvetica, Arial;
-	padding: 10px 20px;
-	text-align: center;
-	margin-right: 10px;
-	box-sizing: border-box;
+    font-size: 15px;
+    display: inline;
+    list-style-type: none;
+    border: none;
+    line-height: 20px;
+    vertical-align: 0px;
+    font: 700 13px Helvetica, Arial;
+    padding: 10px 20px;
+    text-align: center;
+    margin-right: 10px;
+    box-sizing: border-box;
 }
 
 header nav ul li a {
-	padding: inherit;
-	color: var(--color-light-grey);
-	text-decoration: none;
+    padding: inherit;
+    color: var(--color-light-grey);
+    text-decoration: none;
 }
 
 header nav ul li a:hover {
-	color: var(--color-black);
-	background: #dadada;
+    color: var(--color-black);
+    background: #dadada;
 }
 
 .advert-content {
-	bottom: 50px;
-	display: grid;
-	grid-gap: 5px;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    bottom: 50px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
-	padding: 1%;
-	border: none;
-	border-radius: 5px;
-	margin: 2%;
-	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.3);
-	background-color: var(--color-white);
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    margin: 2%;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-white);
 }
 
 .image img {
-	width: 100%;
-	height: 200px;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .hidden {
-	display: block;
+    display: block;
 }
 
 .hidden ul li {
-	list-style: none;
-	font-size: 15px;
-	margin-left: 10px;
+    list-style: none;
+    font-size: 15px;
+    margin-left: 10px;
 }
 
 .hidden p:nth-child(1) {
-	margin-top: 2px;
-	font-family: Tahoma;
+    margin-top: 2px;
+    font-family: Tahoma;
+}
+
+.user-action {
+    display: flex;
+    flex-basis: 2px;
+    justify-content: space-between;
 }
 
 button.edit-content {
-	background-color: #1a94c9;
-	height: 5em;
-	width: 5em;
-	border-radius: 5px;
-	border-bottom: 4px solid #023449;
-	color: var(--color-white);
-	cursor: pointer;
+    background-color: #1a94c9;
+    height: 70px;
+    width: 5em;
+    border-radius: 5px;
+    border-bottom: 4px solid #023449;
+    color: var(--color-white);
+    cursor: pointer;
 }
+
 .title h5 {
-	font-size: 15px;
-	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 15px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .description p {
-	font-size: 15px;
-	font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
 }
 
 footer {
-	color: var(--color-light-grey);
-	background-color: var(--color-dark);
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	height: 3rem;
+    color: var(--color-light-grey);
+    background-color: var(--color-dark);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
 }
 
 .form-details {
-	display: flex;
-	flex-direction: column;
-	background: var(--color-dark-forms);
-	top: 50px;
-	float: center;
-	width: 500px;
-	height: 500px;
-	margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-dark-forms);
+    top: 50px;
+    float: center;
+    width: 500px;
+    height: 500px;
+    margin: 10px auto;
 }
 
 .form-details h3 {
-	border: none solid;
-	padding: 15px;
-	color: var(--color-white);
-	text-align: center;
-	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-	margin-top: 10px;
-	border-radius: 10px;
+    border: none solid;
+    padding: 15px;
+    color: var(--color-white);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 .form-details form p {
-	color: var(--color-white);
-	margin: 10px;
+    color: var(--color-white);
+    margin: 10px;
 }
 
 .form-details form #form-info {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .form-details #prop-image {
-	border: none;
-	font-size: 15px;
+    border: none;
+    font-size: 15px;
 }
 
 form.signupform {
-	background: var(--color-dark-forms);
-	border: none solid var(--color-black);
-	font-size: 13px;
-	border-radius: 10px;
+    background: var(--color-dark-forms);
+    border: none solid var(--color-black);
+    font-size: 13px;
+    border-radius: 10px;
 }
 
 form.signupform input {
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 1px var(--color-green) solid;
-	background: none;
-	width: 80%;
-	height: 20px;
-	font-size: 1.2rem;
-	color: white;
-	margin: 10px 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px var(--color-green) solid;
+    background: none;
+    width: 80%;
+    height: 20px;
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px 5px;
 }
 
 input[type="submit"]#submit {
-	width: 20vw;
-	border: none;
-	text-align: center;
-	border: 1px var(--color-green) solid;
-	background: inherit;
-	color: var(--color-white);
-	height: 50px;
-	cursor: pointer;
+    width: 20vw;
+    border: none;
+    text-align: center;
+    border: 1px var(--color-green) solid;
+    background: inherit;
+    color: var(--color-white);
+    height: 50px;
+    cursor: pointer;
 }
 
 input[type="submit"]#submit:hover {
-	background: var(--color-green);
+    background: var(--color-green);
 }
 
 .login {
-	display: flex;
-	flex-direction: column;
-	background: var(--color-dark-forms);
-	top: 50px;
-	float: center;
-	width: 500px;
-	height: 40vh;
-	margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-dark-forms);
+    top: 50px;
+    float: center;
+    width: 500px;
+    height: 40vh;
+    margin: 10px auto;
 }
 
 .login .login-form {
-	flex: 3;
-	width: 100%;
-	background: var(--color-dark-forms);
-	height: 40vh;
+    flex: 3;
+    width: 100%;
+    background: var(--color-dark-forms);
+    height: 40vh;
 }
 
 .login h4 {
-	margin-top: 10px;
-	text-align: center;
-	color: var(--color-white);
+    margin-top: 10px;
+    text-align: center;
+    color: var(--color-white);
 }
 
 .login input {
-	flex: 1;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 1px var(--color-green) solid;
-	background: none;
-	width: 80%;
-	height: 20px;
-	font-size: 1.2rem;
-	color: white;
-	margin: 20px 15px;
+    flex: 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px var(--color-green) solid;
+    background: none;
+    width: 80%;
+    height: 20px;
+    font-size: 1.2rem;
+    color: white;
+    margin: 20px 15px;
 }
 
 .login-form p a {
-	text-decoration: none;
-	font-size: 20px;
-	color: var(--color-white);
-	margin: 15px 10px;
-	font-size: 0.9em;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-white);
+    margin: 15px 10px;
+    font-size: 0.9em;
 }
 
 .login-form input[type="submit"] {
-	width: 30vw;
-	border: none;
-	text-align: center;
-	border: 1px var(--color-green) solid;
-	background: inherit;
-	color: var(--color-white);
-	height: 50px;
-	cursor: pointer;
+    width: 30vw;
+    border: none;
+    text-align: center;
+    border: 1px var(--color-green) solid;
+    background: inherit;
+    color: var(--color-white);
+    height: 50px;
+    cursor: pointer;
 }
 
 .login-form input[type="submit"]:hover {
-	background: var(--color-green);
-	text-align: center;
-	left: 20%;
+    background: var(--color-green);
+    text-align: center;
+    left: 20%;
 }
 
 .img-icon {
-	font-size: 5rem;
-	background: gray;
-	border: 2px solid black;
-	border-radius: 50%;
-	padding: 0.8rem;
-	margin-left: 70%;
+    font-size: 5rem;
+    background: gray;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 0.8rem;
+    margin-left: 70%;
 }
 
 .fa-camera {
-	font-size: 2rem;
+    font-size: 2rem;
 }
 
 h3#userprof {
-	text-align: center;
-	margin: 0px 0px 5px 0px;
-	background: var(--color-dark);
-	color: var(--color-green);
-	padding: 5px;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+    background: var(--color-dark);
+    color: var(--color-green);
+    padding: 5px;
 }
 
 .upload {
-	position: relative;
-	top: -5rem;
-	left: 27rem;
-	font-size: 2.7rem;
+    position: relative;
+    top: -5rem;
+    left: 27rem;
+    font-size: 2.7rem;
 }
 
 .profile-card {
-	width: 500px;
-	min-height: 700px;
-	height: 100%;
-	border: 1px solid var(--color-black);
-	border-radius: 0px 0px 10px 10px;
-	margin: 30px auto;
-	background: var(--color-white);
+    width: 500px;
+    min-height: 700px;
+    height: 100%;
+    border: 1px solid var(--color-black);
+    border-radius: 0px 0px 10px 10px;
+    margin: 30px auto;
+    background: var(--color-white);
 }
 
 details.profileinfo {
-	border-radius: 4px;
-	padding: 0.5em 0.5em 0;
-	margin: 1em 10px;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+    margin: 1em 10px;
 }
 
 details.profileinfo summary {
-	font-weight: bold;
-	margin: 1em -0.5em 0;
-	padding: 0.5em;
-	width: inherit;
-	background-color: #ddd;
-	color: var(--color-green);
-	border: none;
-	box-shadow: 3px 3px 4px black;
-	cursor: pointer;
+    font-weight: bold;
+    margin: 1em -0.5em 0;
+    padding: 0.5em;
+    width: inherit;
+    background-color: #ddd;
+    color: var(--color-green);
+    border: none;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
 }
 
 details.profileinfo [open] {
-	padding: 0.5em;
+    padding: 0.5em;
 }
 
-details.profileinfo > summary::-webkit-details-marker {
-	display: none;
+details.profileinfo>summary::-webkit-details-marker {
+    display: none;
 }
 
 details.profileinfo summary:after {
-	border-radius: 5px;
-	content: "+";
-	float: right;
+    border-radius: 5px;
+    content: "+";
+    float: right;
 }
 
 details.profileinfo[open] summary::after {
-	margin-bottom: 0.5em;
-	content: "-";
+    margin-bottom: 0.5em;
+    content: "-";
 }
 
 details.profileinfo p {
-	margin: 10px;
+    margin: 10px;
 }
 
 @media only screen and (max-width: 600px) {
-	header nav {
-		display: flex;
-		flex-direction: row;
-	}
+    header nav {
+        display: flex;
+        flex-direction: row;
+    }
 
-	header nav ul {
-		display: inline-block;
-	}
+    header nav ul {
+        display: inline-block;
+    }
 
-	header nav a img {
-		flex: 1;
-		left: 80%;
-		margin: 0 10px 0 0;
-		width: 50px;
-		height: 50px;
-	}
+    header nav a img {
+        flex: 1;
+        left: 80%;
+        margin: 0 10px 0 0;
+        width: 50px;
+        height: 50px;
+    }
 
-	header nav ul li {
-		text-align: center;
-		display: block;
-		float: left;
-		letter-spacing: 5px;
-	}
+    header nav ul li {
+        text-align: center;
+        display: block;
+        float: left;
+        letter-spacing: 5px;
+    }
 
-	.form-details {
-		display: flex;
-		flex-direction: column;
-		background: var(--color-dark-forms);
-		top: 50px;
-		float: center;
-		margin: 10px auto;
-		width: 100%;
-		height: 300px;
-		border: 1px solid var(--color-black);
-		font-size: 13px;
-		border-radius: 10px;
-	}
+    .form-details {
+        display: flex;
+        flex-direction: column;
+        background: var(--color-dark-forms);
+        top: 50px;
+        float: center;
+        margin: 10px auto;
+        width: 100%;
+        height: 300px;
+        border: 1px solid var(--color-black);
+        font-size: 13px;
+        border-radius: 10px;
+    }
 
-	.form-details h3 {
-		border: none solid;
-		padding: 15px;
-		text-align: left;
-		color: var(--color-white);
-		font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-		margin-top: 10px;
-		border-radius: 10px;
-	}
+    .form-details h3 {
+        border: none solid;
+        padding: 15px;
+        text-align: left;
+        color: var(--color-white);
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
 
-	.form-details form p {
-		color: var(--color-white);
-		margin: 10px;
-	}
+    .form-details form p {
+        color: var(--color-white);
+        margin: 10px;
+    }
 
-	.form-details form #form-info {
-		margin: 2px;
-		font-family: Verdana, Tahoma, sans-serif;
-		font-size: 12px;
-	}
+    .form-details form #form-info {
+        margin: 2px;
+        font-family: Verdana, Tahoma, sans-serif;
+        font-size: 12px;
+    }
 
-	form.signupform {
-		background: var(--color-dark-forms);
-		border: none solid black;
-		font-size: 13px;
-		border-radius: 10px;
-	}
+    form.signupform {
+        background: var(--color-dark-forms);
+        border: none solid black;
+        font-size: 13px;
+        border-radius: 10px;
+    }
 
-	form.signupform input {
-		flex: 1;
-		border-top: none;
-		border-left: none;
-		border-right: none;
-		border-bottom: 1px var(--color-green) solid;
-		background: none;
-		width: 80%;
-		height: 20px;
-		font-size: 1rem;
-		color: var(--color-white);
-		margin: 10px 5px;
-	}
+    form.signupform input {
+        flex: 1;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px var(--color-green) solid;
+        background: none;
+        width: 80%;
+        height: 20px;
+        font-size: 1rem;
+        color: var(--color-white);
+        margin: 10px 5px;
+    }
 
-	input[type="submit"].submitbtn {
-		flex: 1;
-		border: none;
-		text-align: center;
-		border: 1px var(--color-green) solid;
-		background: inherit;
-		color: white;
-		height: 20px;
-		cursor: pointer;
-		font-size: 10px;
-	}
+    input[type="submit"].submitbtn {
+        flex: 1;
+        border: none;
+        text-align: center;
+        border: 1px var(--color-green) solid;
+        background: inherit;
+        color: white;
+        height: 20px;
+        cursor: pointer;
+        font-size: 10px;
+    }
 
-	.login {
-		display: flex;
-		flex-direction: column;
-		background: var(--color-dark-forms);
-		top: 50px;
-		float: center;
-		margin: 10px auto;
-		width: 100%;
-		height: 300px;
-		border: 1px solid var(--color-black);
-		font-size: 13px;
-		border-radius: 10px;
-	}
+    .login {
+        display: flex;
+        flex-direction: column;
+        background: var(--color-dark-forms);
+        top: 50px;
+        float: center;
+        margin: 10px auto;
+        width: 100%;
+        height: 300px;
+        border: 1px solid var(--color-black);
+        font-size: 13px;
+        border-radius: 10px;
+    }
 
-	.login .login-form {
-		flex: 3;
-		width: 100%;
-		background: var(--color-dark-forms);
-		height: 40vh;
-	}
+    .login .login-form {
+        flex: 3;
+        width: 100%;
+        background: var(--color-dark-forms);
+        height: 40vh;
+    }
 
-	.login h4 {
-		margin-top: 10px;
-		text-align: center;
-		color: var(--color-white);
-	}
+    .login h4 {
+        margin-top: 10px;
+        text-align: center;
+        color: var(--color-white);
+    }
 
-	.login input {
-		flex: 1;
-		border-top: none;
-		border-left: none;
-		border-right: none;
-		border-bottom: 1px var(--color-green) solid;
-		background: none;
-		width: 80%;
-		height: 20px;
-		font-size: 1.2rem;
-		color: white;
-		margin: 20px 15px;
-	}
+    .login input {
+        flex: 1;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px var(--color-green) solid;
+        background: none;
+        width: 80%;
+        height: 20px;
+        font-size: 1.2rem;
+        color: white;
+        margin: 20px 15px;
+    }
 
-	.login-form p a {
-		text-decoration: none;
-		font-size: 20px;
-		color: var(--color-white);
-		margin: 15px 10px;
-		font-size: 0.9em;
-	}
+    .login-form p a {
+        text-decoration: none;
+        font-size: 20px;
+        color: var(--color-white);
+        margin: 15px 10px;
+        font-size: 0.9em;
+    }
 
-	.img-icon {
-		font-size: 3rem;
-		background: gray;
-		border: 2px solid black;
-		border-radius: 50%;
-		padding: 0.8rem;
-		margin-left: 70%;
-	}
+    .img-icon {
+        font-size: 3rem;
+        background: gray;
+        border: 2px solid black;
+        border-radius: 50%;
+        padding: 0.8rem;
+        margin-left: 70%;
+    }
 
-	.fa-camera {
-		font-size: 2rem;
-	}
+    .fa-camera {
+        font-size: 2rem;
+    }
 
-	.upload {
-		position: relative;
-		top: -5rem;
-		left: 27rem;
-		font-size: 2.7rem;
-	}
+    .upload {
+        position: relative;
+        top: -5rem;
+        left: 27rem;
+        font-size: 2.7rem;
+    }
 
-	h3#userprof {
-		font-size: 1em;
-		text-align: center;
-		margin: 0px 0px 5px 0px;
-		background: var(--color-dark);
-		color: var(--color-green);
-		padding: 5px;
-	}
+    h3#userprof {
+        font-size: 1em;
+        text-align: center;
+        margin: 0px 0px 5px 0px;
+        background: var(--color-dark);
+        color: var(--color-green);
+        padding: 5px;
+    }
 
-	.upload {
-		position: relative;
-		top: -5rem;
-		left: 27rem;
-		font-size: 2.7rem;
-	}
+    .upload {
+        position: relative;
+        top: -5rem;
+        left: 27rem;
+        font-size: 2.7rem;
+    }
 
-	.profile-card {
-		width: 20rem;
-		height: 100%;
-		border-radius: 10px;
-		margin: 20px auto;
-	}
+    .profile-card {
+        width: 20rem;
+        height: 100%;
+        border-radius: 10px;
+        margin: 20px auto;
+    }
 
-	details.profileinfo {
-		border-radius: 4px;
-		padding: 0.5em 0.5em 0;
-		margin: 1em 10px;
-	}
+    details.profileinfo {
+        border-radius: 4px;
+        padding: 0.5em 0.5em 0;
+        margin: 1em 10px;
+    }
 
-	details.profileinfo summary {
-		font-weight: bold;
-		margin: 1em -0.5em 0;
-		padding: 0.5em;
-		width: inherit;
-		background-color: #ddd;
-		color: var(--color-green);
-		border: none;
-		box-shadow: 3px 3px 4px black;
-		cursor: pointer;
-	}
+    details.profileinfo summary {
+        font-weight: bold;
+        margin: 1em -0.5em 0;
+        padding: 0.5em;
+        width: inherit;
+        background-color: #ddd;
+        color: var(--color-green);
+        border: none;
+        box-shadow: 3px 3px 4px black;
+        cursor: pointer;
+    }
 
-	details.profileinfo > summary::-webkit-details-marker {
-		display: none;
-	}
+    details.profileinfo>summary::-webkit-details-marker {
+        display: none;
+    }
 
-	details.profileinfo summary:after {
-		border-radius: 5px;
-		content: "+";
-		float: right;
-	}
+    details.profileinfo summary:after {
+        border-radius: 5px;
+        content: "+";
+        float: right;
+    }
 
-	details.profileinfo[open] summary::after {
-		margin-bottom: 0.5em;
-		content: "-";
-	}
+    details.profileinfo[open] summary::after {
+        margin-bottom: 0.5em;
+        content: "-";
+    }
 
-	details.profileinfo p {
-		margin: 10px;
-	}
+    details.profileinfo p {
+        margin: 10px;
+    }
 
-	details.profileinfo [open] {
-		padding: 0.5em;
-	}
+    details.profileinfo [open] {
+        padding: 0.5em;
+    }
 }

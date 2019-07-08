@@ -5,25 +5,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Homepage</title>
-        <link rel="stylesheet" href="./styles/main.css">
-        <link rel="./image/prop.png" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../styles/main.css">
+        <title>Posted Property</title>
     </head>
 
     <body>
         <header>
             <nav>
-                <a href="#"><img src="./image/prop.png" alt="Homepage"></a>
+                <a href="../index.html"><img src="../image/prop.png" alt="Homepage"></a>
                 <ul class="info">
-                    <li><a href="">Rent/Buy</a></li>
-                    <li><a href="./pages/postproperty.html">Advertise</a></li>
-                    <li><a href="./pages/signup.html">Sign Up</a></li>
-                    <li><a href="./pages/login.html">Log In</a></li>
+                    <li><a href="#">Rent/Buy</a></li>
+                    <li><a href="./postproperty.html">Advertise</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                    <li><a href="./login.html">Log In</a></li>
                 </ul>
                 </div>
             </nav>
         </header>
-
         <section class="advert-content">
             <div class="card">
                 <div class="image">
@@ -35,15 +33,16 @@
                     <h5>6 BEDROOM DUPLEX</h5>
                 </div>
                 <div class="description">
-                    <p>Well furnished building at Gwagwalada, Abuja</p>
+                    <p>Location: Abuja</p>
                     <div class="hidden">
                         <p>Features are</p>
-                        <ul class="edit">
+                        <ul class="features">
                             <li>6 bedrooms</li>
                             <li>Jacuzzi bathroom</li>
                             <li>Interlocked tile floor</li>
                         </ul>
                         <p>Cost:&nbsp;&nbsp;N40,000,000</p>
+                        <button class="edit-content">Edit</button>
                     </div>
 
                 </div>
@@ -58,27 +57,46 @@
                     <h5>SEMI DETACHED 5 BEDROOM DUPLEX</h5>
                 </div>
                 <div class="description">
-                    <p>Well furnished building at Independence Layout, Enugu </p>
+                    <p>Location: Enugu </p>
                     <div class="hidden">
                         <p>Features are</p>
-                        <ul class="edit">
+                        <ul class="features">
                             <li>5 bedrooms</li>
                             <li>Steam bath</li>
                             <li>Marble floor</li>
                         </ul>
                         <p>Cost:&nbsp;&nbsp;N60,000,000</p>
+                        <button class="edit-content">Edit</button>
                     </div>
                 </div>
 
             </div>
+            <div class="card" id="selfcon1">
+                <div class="image">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzZciwjBOKXj36Ykj6bKvZFzyUP3OqOdg6NnaFWTaFbeiOa2Q_NQ">
+                </div>
+                <div class="title">
+                    <h5>SELF CONTAINED APARTMENT</h5>
+                </div>
+                <div class="description">
+                    <p>Location: Lagos</p>
+                    <div class="hidden">
+                        <p>Features are</p>
+                        <ul class="features">
+                            <li>Wardrobes</li>
+                            <li>Kitchen Cabinet</li>
+                            <li>Tiled floor</li>
+                        </ul>
+                        <p>Rent:&nbsp;&nbsp;N125,000</p>
+
+                    </div>
+
+                </div>
+                <button class="edit-content">Edit</button>
+            </div>
 
         </section>
-
-        <footer>
-            <p>&copy; Copyright 2019</p>
-        </footer>
-
-        <script src="./scripts/index.js"></script>
     </body>
 
 </html>

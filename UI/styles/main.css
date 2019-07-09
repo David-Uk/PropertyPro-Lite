@@ -363,6 +363,97 @@ details.profileinfo p {
     margin: 10px;
 }
 
+a .view-prop {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover .view-prop {
+    background: #012e69;
+}
+
+body.specific-prop {
+    background: #012e69;
+}
+
+section.spec-prop {
+    display: grid;
+    grid-template-columns: 0% 1fr;
+    position: absolute;
+    top: 30px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.prop-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.prop-container img {
+    margin-top: 20px;
+    margin-left: 250px;
+    border-radius: 10px;
+    border: 5px solid white;
+    height: 300px;
+    width: 350px;
+}
+
+.full-details {
+    margin-top: 30px;
+    display: inline;
+
+
+}
+
+.prop-details {
+    display: inline-block;
+    width: 300px;
+    border-radius: 12px;
+    margin-left: 60%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.prop-details details {
+    background: white;
+    content: "";
+    border-radius: 10px;
+}
+
+.prop-details details summary {
+    font-weight: bold;
+    padding: 1.5em;
+    color: #1a94c9;
+    outline-color: #000;
+    content: "+";
+}
+
+.prop-details details>summary::-webkit-details-marker {
+    display: none;
+}
+
+.prop-details details summary:after {
+    border-radius: 5px;
+    content: "+";
+    float: right;
+}
+
+.prop-details details[open] summary::after {
+    margin-bottom: 0.5em;
+    content: "-";
+}
+
+.prop-details details p {
+    padding: 1em;
+}
+
+.prop-details p span {
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
     header nav {
         display: flex;
@@ -588,4 +679,67 @@ details.profileinfo p {
     details.profileinfo [open] {
         padding: 0.5em;
     }
+
+    section.spec-prop {
+        position: absolute;
+        top: 10em;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        background: #012e69;
+    }
+
+    .prop-container {
+        display: block;
+        background: #012e69;
+        box-sizing: border-box;
+        margin-top: 0px;
+    }
+
+    .prop-container img {
+        margin-top: 20px;
+        margin-left: 10px;
+        border-radius: 10px;
+        border: 5px solid white;
+        height: 300px;
+        width: 40vw;
+    }
+
+    .full-details {
+        display: inline;
+        top: -30%;
+
+    }
+
+    .prop-details {
+        display: inline-block;
+        width: 100px;
+        border-radius: 12px;
+        margin-left: 60%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .prop-details details {
+        background: white;
+        content: "";
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .prop-details details summary {
+        font-weight: bold;
+        padding: 1em;
+        color: #1a94c9;
+        outline-color: #000;
+    }
+
+    .prop-details details p {
+        padding: 1em;
+    }
+
+    .prop-details p span {
+        font-weight: bold;
+    }
+
 }

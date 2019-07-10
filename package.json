@@ -1,0 +1,24 @@
+{
+  "name": "propertypro-lite",
+  "version": "1.0.0",
+  "description": "A web based application for real estate transactions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David-Uk/PropertyPro-Lite.git"
+  },
+  "author": "David Ukelere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/David-Uk/PropertyPro-Lite/issues"
+  },
+  "homepage": "https://github.com/David-Uk/PropertyPro-Lite#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0"
+  }
+}

@@ -86,7 +86,7 @@ exports.markSold = (req, res) => {
     adverts.splice(index, 1, soldObj);
 
     return res.status(200).json({
-        status: 200,
+        status: "success",
         data: soldObj,
     });
 };

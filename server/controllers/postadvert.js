@@ -38,3 +38,8 @@ exports.createAdvert = (req, res) => {
         data: propertyAdvert,
     });
 };
+
+exports.allAdverts = (req, res) => res.status(200).json({
+    status: "success",
+    data: adverts,
+});

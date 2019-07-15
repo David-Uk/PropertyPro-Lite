@@ -3,7 +3,8 @@ import { allUsers, signup } from '../controllers/usersController';
 import { signin } from '../controllers/signinController';
 import { createAdvert, allAdverts } from '../controllers/postadvert';
 import { deleteAdvert } from '../controllers/deleteadvert';
-import {updateAdvert} from '../controllers/updateadvert';
+import { updateAdvert } from '../controllers/updateadvert';
+import { singleAdvert } from '../controllers/singleadvert';
 import { verifyToken, token } from '../middleware/middleware';
 
 const router = express.Router();
@@ -15,9 +16,7 @@ router.route('/property').post(verifyToken, createAdvert);
 router.route('/property').get(allAdverts);
 router.route('/property/:propertyId')
     .delete(verifyToken, deleteAdvert)
-    .patch(verifyToken,updateAdvert);
-
-
-
+    .patch(verifyToken, updateAdvert)
+    .get(singleAdvert);
 
 export default router;

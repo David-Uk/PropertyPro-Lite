@@ -4,6 +4,9 @@
   "description": "A web based application for real estate transactions",
   "main": "index.js",
   "scripts": {
+    "eslint": "./node_modules/.bin/eslint --fix",
+    "prestart": "nodemon --exec babel-node server/index.js",
+    "start": "set DEBUG=pro-lite-* &&nodemon --exec babel-node server/index.js",
     "test": "./node_modules/.bin/mocha --require @babel/register"
   },
   "repository": {
@@ -30,8 +33,10 @@
     "mocha": "^6.1.4"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "debug": "^4.1.1",
     "dotenv": "^8.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
   }
 }

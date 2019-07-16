@@ -1,4 +1,5 @@
 import { adverts } from '../models/models';
+import { imageUpload } from '../middleware/multer';
 import { checkUserType, currentUser } from '../helpers/utilities';
 import { checkAdEmptyFileds } from '../helpers/validators';
 import { datetime } from '../helpers/utilities';
@@ -16,6 +17,16 @@ exports.createAdvert = (req, res) => {
         return checkUserType(activeUser, res);
     }
 
+    let imageUrl;
+    if (req.file) {
+        const fileUrl = await imageUpload(req);
+        if (fileUrl) {
+            imageUrl = fileUrl;
+        } else {
+            imageUrl = 'https://via.placeholder.com/350x150';
+        }
+    }
+
     const advertId = adverts.length + 1;
     const propertyAdvert = {
         id: advertId,
@@ -29,6 +40,8 @@ exports.createAdvert = (req, res) => {
         created_on: datetime,
         created_by_staffId: activeUser.id,
         created_by_staffName: activeUser.firstName,
+        owner_email: activeUser.email,
+        owner_phoneNo: activeUser.phoneNumber
     };
 
     adverts.push(propertyAdvert);

@@ -1,5 +1,5 @@
 import { adverts } from '../models/models';
-// const { checkAdEmptyFileds } = require('../helpers/validators');
+import { imageUpload } from '../middleware/multer';
 import { currentUser, loggedinUser, checkAdvertId, checkAdvert, } from '../helpers/utilities';
 
 exports.updateAdvert = (req, res) => {
@@ -16,6 +16,16 @@ exports.updateAdvert = (req, res) => {
 
     checkAdvertId(advertObject, propertyId, res);
 
+    let imageUrl;
+    if (req.file) {
+        const fileUrl = await imageUpload(req);
+        if (fileUrl) {
+            imageUrl = fileUrl;
+        } else {
+            imageUrl = 'https://via.placeholder.com/350x150';
+        }
+    }
+
     const newAdvertObject = {
         id: advertObject.id,
         status: status || advertObject.Status,
@@ -24,10 +34,11 @@ exports.updateAdvert = (req, res) => {
         city: city || advertObject.City,
         address: address || advertObject.Address,
         price: price || advertObject.Price,
-        imageUrl: imageUrl || advertObject.Image,
+        image_url: imageUrl || advertObject.Image,
         created_on: advertObject.created_on,
         created_by_staffId: activeUser.id,
         created_by_staffName: activeUser.firstName,
+        email: activeUser.email
     };
 
     let index = null;

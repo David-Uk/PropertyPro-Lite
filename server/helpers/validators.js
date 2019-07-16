@@ -46,10 +46,10 @@ exports.checkPassword = (password, res) => {
 };
 
 exports.checkPhoneNumber = (phoneNumber, res) => {
-    if (!phoneNumber.match(/^\+[0-9]?()[0-9](\s|\S)(\d[0-9]{9})$/)) {
+    if (!phoneNumber.match(/^[0]\d{10}$/)) {
         return res.status(400).json({
             status: "error",
-            error: 'Please enter a valid phone number with country code',
+            error: 'Please enter a valid phone number',
         });
     }
 };

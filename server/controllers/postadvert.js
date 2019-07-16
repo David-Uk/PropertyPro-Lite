@@ -17,13 +17,13 @@ exports.createAdvert = (req, res) => {
         return checkUserType(activeUser, res);
     }
 
-    let imageUrl;
+    let image;
     if (req.file) {
-        const fileUrl = await imageUpload(req);
+        const fileUrl = imageUpload(req);
         if (fileUrl) {
-            imageUrl = fileUrl;
+            image = fileUrl;
         } else {
-            imageUrl = 'https://via.placeholder.com/350x150';
+            image = 'https://via.placeholder.com/350x150';
         }
     }
 
@@ -36,7 +36,7 @@ exports.createAdvert = (req, res) => {
         City: city,
         Address: address,
         Price: price,
-        Image: imageUrl,
+        Image: image,
         created_on: datetime,
         created_by_staffId: activeUser.id,
         created_by_staffName: activeUser.firstName,

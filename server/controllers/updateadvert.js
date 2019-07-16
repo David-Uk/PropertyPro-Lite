@@ -15,14 +15,14 @@ exports.updateAdvert = (req, res) => {
     const advertObject = checkAdvert(propertyId);
 
     checkAdvertId(advertObject, propertyId, res);
-
-    let imageUrl;
+   
+    let image;
     if (req.file) {
-        const fileUrl = await imageUpload(req);
+        const fileUrl = imageUpload(req);
         if (fileUrl) {
-            imageUrl = fileUrl;
+            image = fileUrl;
         } else {
-            imageUrl = 'https://via.placeholder.com/350x150';
+            image = 'https://via.placeholder.com/350x150';
         }
     }
 
@@ -34,7 +34,7 @@ exports.updateAdvert = (req, res) => {
         city: city || advertObject.City,
         address: address || advertObject.Address,
         price: price || advertObject.Price,
-        image_url: imageUrl || advertObject.Image,
+        image_url: image || advertObject.Image,
         created_on: advertObject.created_on,
         created_by_staffId: activeUser.id,
         created_by_staffName: activeUser.firstName,

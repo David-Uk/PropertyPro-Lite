@@ -4,7 +4,7 @@ import Datauri from 'datauri';
 
 import path from 'path';
 
-import {uploader} from '../config/cloudinaryConfig';
+import { uploader } from '../config/cloudinaryConfig';
 
 
 const storage = multer.memoryStorage();
@@ -26,6 +26,7 @@ const imageUpload = (req) => {
         .then(result => result.url)
         .catch(err => console.log(err));
 };
+
 export {
     multerUploads,
     imageUpload,

@@ -1,4 +1,4 @@
-import 'dotenv/config';
+
 import { config, uploader } from 'cloudinary';
 
 const configCloudinary = (req, res, next) => {

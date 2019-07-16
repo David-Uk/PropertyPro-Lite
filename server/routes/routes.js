@@ -6,6 +6,7 @@ import { deleteAdvert } from '../controllers/deleteadvert';
 import { updateAdvert } from '../controllers/updateadvert';
 import { singleAdvert } from '../controllers/singleadvert';
 import { markAsSold } from '../controllers/markassold';
+import { searchAdvertType } from '../controllers/searchadvert';
 import { verifyToken, token } from '../middleware/middleware';
 
 const router = express.Router();
@@ -20,5 +21,6 @@ router.route('/property/:propertyId')
     .patch(verifyToken, updateAdvert)
     .get(singleAdvert);
 router.route('/property/:propertyId/sold').patch(verifyToken, markAsSold);
+router.route('/property/:propertyId/:type').get(searchAdvertType);
 
 export default router;
